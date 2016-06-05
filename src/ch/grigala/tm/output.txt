@@ -1,0 +1,275 @@
+Checking implementation for aabbcc:
+|q0|aabbcc
+x|q1|abbcc
+xa|q1|bbcc
+xax|q2|bcc
+xaxb|q2|cc
+xaxb|q3|xc
+xax|q3|bxc
+xa|q3|xbxc
+x|q3|axbxc
+|q4|xaxbxc
+x|q0|axbxc
+xx|q1|xbxc
+xxx|q1|bxc
+xxxx|q2|xc
+xxxxx|q2|c
+xxxxx|q3|x
+xxxx|q3|xx
+xxx|q3|xxx
+xx|q3|xxxx
+x|q3|xxxxx
+|q3|xxxxxx
+|q3|_xxxxxx
+_|q5|xxxxxx
+_x|q5|xxxxx
+_xx|q5|xxxx
+_xxx|q5|xxx
+_xxxx|q5|xx
+_xxxxx|q5|x
+_xxxxxx|q5|_
+_xxxxxx|q6|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 29
+Tape cells used: 8
+==============================
+Checking implementation for empty word:
+|q0|_
+|q6|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 1
+Tape cells used: 1
+==============================
+Simulating word abc:
+|q0|abc
+x|q1|bc
+xx|q2|c
+xx|q3|x
+x|q3|xx
+|q3|xxx
+|q3|_xxx
+_|q5|xxx
+_x|q5|xx
+_xx|q5|x
+_xxx|q5|_
+_xxx|q6|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 11
+Tape cells used: 5
+==============================
+Simulating word aaabbbccc:
+|q0|aaabbbccc
+x|q1|aabbbccc
+xa|q1|abbbccc
+xaa|q1|bbbccc
+xaax|q2|bbccc
+xaaxb|q2|bccc
+xaaxbb|q2|ccc
+xaaxbb|q3|xcc
+xaaxb|q3|bxcc
+xaax|q3|bbxcc
+xaa|q3|xbbxcc
+xa|q3|axbbxcc
+x|q4|aaxbbxcc
+|q4|xaaxbbxcc
+x|q0|aaxbbxcc
+xx|q1|axbbxcc
+xxa|q1|xbbxcc
+xxax|q1|bbxcc
+xxaxx|q2|bxcc
+xxaxxb|q2|xcc
+xxaxxbx|q2|cc
+xxaxxbx|q3|xc
+xxaxxb|q3|xxc
+xxaxx|q3|bxxc
+xxax|q3|xbxxc
+xxa|q3|xxbxxc
+xx|q3|axxbxxc
+x|q4|xaxxbxxc
+xx|q0|axxbxxc
+xxx|q1|xxbxxc
+xxxx|q1|xbxxc
+xxxxx|q1|bxxc
+xxxxxx|q2|xxc
+xxxxxxx|q2|xc
+xxxxxxxx|q2|c
+xxxxxxxx|q3|x
+xxxxxxx|q3|xx
+xxxxxx|q3|xxx
+xxxxx|q3|xxxx
+xxxx|q3|xxxxx
+xxx|q3|xxxxxx
+xx|q3|xxxxxxx
+x|q3|xxxxxxxx
+|q3|xxxxxxxxx
+|q3|_xxxxxxxxx
+_|q5|xxxxxxxxx
+_x|q5|xxxxxxxx
+_xx|q5|xxxxxxx
+_xxx|q5|xxxxxx
+_xxxx|q5|xxxxx
+_xxxxx|q5|xxxx
+_xxxxxx|q5|xxx
+_xxxxxxx|q5|xx
+_xxxxxxxx|q5|x
+_xxxxxxxxx|q5|_
+_xxxxxxxxx|q6|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 55
+Tape cells used: 11
+==============================
+Simulating word aaaabbbbcccc:
+|q0|aaaabbbbcccc
+x|q1|aaabbbbcccc
+xa|q1|aabbbbcccc
+xaa|q1|abbbbcccc
+xaaa|q1|bbbbcccc
+xaaax|q2|bbbcccc
+xaaaxb|q2|bbcccc
+xaaaxbb|q2|bcccc
+xaaaxbbb|q2|cccc
+xaaaxbbb|q3|xccc
+xaaaxbb|q3|bxccc
+xaaaxb|q3|bbxccc
+xaaax|q3|bbbxccc
+xaaa|q3|xbbbxccc
+xaa|q3|axbbbxccc
+xa|q4|aaxbbbxccc
+x|q4|aaaxbbbxccc
+|q4|xaaaxbbbxccc
+x|q0|aaaxbbbxccc
+xx|q1|aaxbbbxccc
+xxa|q1|axbbbxccc
+xxaa|q1|xbbbxccc
+xxaax|q1|bbbxccc
+xxaaxx|q2|bbxccc
+xxaaxxb|q2|bxccc
+xxaaxxbb|q2|xccc
+xxaaxxbbx|q2|ccc
+xxaaxxbbx|q3|xcc
+xxaaxxbb|q3|xxcc
+xxaaxxb|q3|bxxcc
+xxaaxx|q3|bbxxcc
+xxaax|q3|xbbxxcc
+xxaa|q3|xxbbxxcc
+xxa|q3|axxbbxxcc
+xx|q4|aaxxbbxxcc
+x|q4|xaaxxbbxxcc
+xx|q0|aaxxbbxxcc
+xxx|q1|axxbbxxcc
+xxxa|q1|xxbbxxcc
+xxxax|q1|xbbxxcc
+xxxaxx|q1|bbxxcc
+xxxaxxx|q2|bxxcc
+xxxaxxxb|q2|xxcc
+xxxaxxxbx|q2|xcc
+xxxaxxxbxx|q2|cc
+xxxaxxxbxx|q3|xc
+xxxaxxxbx|q3|xxc
+xxxaxxxb|q3|xxxc
+xxxaxxx|q3|bxxxc
+xxxaxx|q3|xbxxxc
+xxxax|q3|xxbxxxc
+xxxa|q3|xxxbxxxc
+xxx|q3|axxxbxxxc
+xx|q4|xaxxxbxxxc
+xxx|q0|axxxbxxxc
+xxxx|q1|xxxbxxxc
+xxxxx|q1|xxbxxxc
+xxxxxx|q1|xbxxxc
+xxxxxxx|q1|bxxxc
+xxxxxxxx|q2|xxxc
+xxxxxxxxx|q2|xxc
+xxxxxxxxxx|q2|xc
+xxxxxxxxxxx|q2|c
+xxxxxxxxxxx|q3|x
+xxxxxxxxxx|q3|xx
+xxxxxxxxx|q3|xxx
+xxxxxxxx|q3|xxxx
+xxxxxxx|q3|xxxxx
+xxxxxx|q3|xxxxxx
+xxxxx|q3|xxxxxxx
+xxxx|q3|xxxxxxxx
+xxx|q3|xxxxxxxxx
+xx|q3|xxxxxxxxxx
+x|q3|xxxxxxxxxxx
+|q3|xxxxxxxxxxxx
+|q3|_xxxxxxxxxxxx
+_|q5|xxxxxxxxxxxx
+_x|q5|xxxxxxxxxxx
+_xx|q5|xxxxxxxxxx
+_xxx|q5|xxxxxxxxx
+_xxxx|q5|xxxxxxxx
+_xxxxx|q5|xxxxxxx
+_xxxxxx|q5|xxxxxx
+_xxxxxxx|q5|xxxxx
+_xxxxxxxx|q5|xxxx
+_xxxxxxxxx|q5|xxx
+_xxxxxxxxxx|q5|xx
+_xxxxxxxxxxx|q5|x
+_xxxxxxxxxxxx|q5|_
+_xxxxxxxxxxxx|q6|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 89
+Tape cells used: 14
+==============================
+Simulating word aabc:
+|q0|aabc
+x|q1|abc
+xa|q1|bc
+xax|q2|c
+xax|q3|x
+xa|q3|xx
+x|q3|axx
+|q4|xaxx
+x|q0|axx
+xx|q1|xx
+xxx|q1|x
+xxxx|q1|_
+xxxx|q1|_
+xxxx|q1|_
+xxxx|q1|_
+xxxx|q1|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 15
+Tape cells used: 5
+==============================
+Simulating word abca:
+|q0|abca
+x|q1|bca
+xx|q2|ca
+xx|q3|xa
+x|q3|xxa
+|q3|xxxa
+|q3|_xxxa
+_|q5|xxxa
+_x|q5|xxa
+_xx|q5|xa
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+_xxx|q5|a
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 17
+Tape cells used: 5
+==============================
+Simulating word aaa:
+|q0|aaa
+x|q1|aa
+xa|q1|a
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+xaa|q1|_
+Turing Machine terminated manually or reached the final state, statistics:
+Required steps: 10
+Tape cells used: 4
+==============================
